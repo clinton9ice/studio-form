@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/ci-modal.css">
+    <link rel="stylesheet" href="./assets/css/fm.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container-fluid">
+            <div class="d-flex  align-content-center content-wrapper">
+                <div class="ads-section lg">
+                </div>
+
+                <div class="form-section">
+                    <div class="container m-auto">
+                        <h3 class="title">Welcome Back</h3>
+                        <p class="text-muted">Let's get you reconnected immediately.</p>
+                        <br>
+
+                        <div class="account-option d-non mb-5" data-account-selection="options">
+                            <p class="txt my-4">Connect with: </p>
+                            <div class="account-selection " data-selection="account">
+                                <div class="account-type" data-account="facebook">
+                                    <a href="#" class="link">
+                                        <i class="bi bi-facebook"></i>
+                                        <p class="text">Facebook</p>
+                                    </a>
+                                </div>
+
+                                <div class="account-type" data-account="google">
+                                    <a href="#" class="link">
+                                        <i class="bi bi-google"></i>
+                                        <p class="text">Google</p>
+                                    </a>
+                                </div>
+
+                                <div class="account-type" data-account="custom">
+                                    <a href="#" class="link" data-default="false">
+                                        <i class="bi bi-envelope-open"></i>
+                                        <p class="text">Email Address</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-form d-non" data-account="custom-account">
+                            <form class="login-form" form-default="false">
+                                <div class="form-group">
+                                    <label for="email" class="label"> Email</label>
+                                    <div class="form-row">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                        <button class="btn disabled attach-icon">
+                                            <i class="bi bi-person-fill"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="label"> Password</label>
+                                    <div class="form-row">
+                                        <input app-type="password" type="password" name="password" id="password" class="form-control" required>
+
+                                        <button type="button" data-default="false" class="btn attach-icon text-muted">
+                                            <i class="bi bi-eye-slash-fill" data-toggle="password"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="btn-container">
+                                    <button class="btn row m-auto align-items-center btn-success rounded active"
+                                            app-event="login">Sign
+                                        Up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <p class="text-muted mt-4">I don't have an account yet?
+                            <a href="register.html" class="link font-weight-bold mt-2">Sign Up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/cl-modal.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

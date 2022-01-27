@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./assets/css/ci-modal.css">
+    <link rel="stylesheet" href="./assets/css/fm.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container-fluid p-0 m-0">
+            <div class="d-flex  align-content-center content-wrapper">
+                <div class="ads-section">
+                </div>
+
+                <div class="form-section">
+                    <div class="container m-auto">
+                        <h3 class="title">Create Account</h3>
+                        <p class="mb-5 text-muted">Share your thoughts with the world today</p>
+                        <br>
+
+                        <div class="account-option mb-5" data-account-selection="options">
+                            <p class="txt my-4">Continue with: </p>
+                            <div class="account-selection" data-selection="account">
+                                <div class="account-type" data-account="facebook">
+                                    <a href="#" class="link">
+                                        <i class="bi bi-facebook"></i>
+                                        <p class="text">Facebook</p>
+                                    </a>
+                                </div>
+
+                                <div class="account-type" data-account="google">
+                                    <a href="#" class="link">
+                                        <i class="bi bi-google"></i>
+                                        <p class="text">Google</p>
+                                    </a>
+                                </div>
+
+                                <div class="account-type" data-account="custom">
+                                    <a href="#" class="link" data-default="false">
+                                        <i class="bi bi-envelope-open"></i>
+                                        <p class="text">Email Address</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-form" data-account="custom-account">
+                            <form action="" class="register-form" form-default="false">
+                                <div class="form-group">
+                                    <label for="email" class="label"> Email</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="label"> Name</label>
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="Enter your Full name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="label"> Password</label>
+                                    <div class="form-row">
+                                        <input app-type="password" type="password" name="password" id="password" class="form-control"
+                                            placeholder="Create your Password" required>
+
+                                        <button type="button" data-default="false" class="btn attach-icon">
+                                            <i class="bi bi-eye-slash-fill" data-toggle="password"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="btn-container">
+                                    <button type="button" class="btn btn-outline-dark active mr-2 rounded"
+                                        app-event="select-option">Select option
+                                    </button>
+                                    <button class="btn row m-auto align-items-center btn-success rounded active"
+                                        app-event="register">Sign
+                                        Up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <p class="text-muted mt-4">Already have an account? <br />
+                            <a href="login.html" class="link font-weight-bold mt-2">Sign In</a>
+                        </p>
+
+                        <br />
+                        <p class="mt-2 text-muted">
+                            By creating account means you've agreed to our <a href="#" class="link">Terms and
+                                Condition</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/cl-modal.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

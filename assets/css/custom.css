@@ -1,0 +1,183 @@
+@import url("./bootstrap-icons.css");
+
+@font-face {
+    font-family: "poppins";
+    src: url("../font/Poppins-Regular.ttf") format("truetype");
+}
+
+:root {
+    --dark: #2e2e2d;
+    --white: hsl(43, 20%, 95%);
+    --white-100: hsl(255,100%,100%);
+    --gray: hsl(0, 0%, 50%);
+    --danger: rgb(231, 69, 69);
+    --blue: rgb(40, 11, 170);
+    --dark-blue: #4f4fb7;
+    --primary-color: hsl(30,52%,44%);
+}
+.btn {
+    /* background-color: #e5e5e5;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: var(--dark);
+    cursor: pointer;
+    vertical-align: middle; */
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.btn-success {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-success:hover {
+    background-color: hsl(30,52%,50%) !important;
+}
+
+.btn:focus {
+    outline-style: ridge;
+    outline-color: #e5e5e5;
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--gray) !important;
+    box-shadow: none !important;
+}
+
+body {
+    background-color: var(--white);
+    font-family: poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+[app-error] {
+    margin-top: 0.5rem;
+}
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    justify-content: space-between;
+}
+.content-wrapper .ads-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 700px);
+    background: url(../img/register.jpeg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.content-wrapper .ads-section.lg {
+    background-image: url(../img/login.jpeg);
+}
+@media screen and (min-width: 900px) {
+.account-selection{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+}
+
+
+.account-type .link {
+    margin: 1rem;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    font-size: 1em;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    line-height: 25px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.09);
+    transition: 200ms ease-in-out;
+    color: var(--dark-blue);
+    background-color: var(--white-100);
+}
+.account-type .link:hover {
+    border-color: var(--primary-color);
+}
+.account-type .text {
+    margin: 0;
+}
+.account-type .link .bi {
+    font-size: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.content-wrapper .form-section .form-control {
+    padding-right: 2rem;
+}
+.content-wrapper .form-section {
+    max-width: 650px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.content-wrapper .form-section .container .title {
+    font-weight: 600;
+}
+.content-wrapper .form-section .custom-form {
+    display: none;
+}
+.content-wrapper .form-section .container .form-group {
+    margin-bottom: 2rem;
+}
+.content-wrapper .form-section .container .label {
+    font-weight: 600;
+}
+.content-wrapper .form-section .container .form-group .form-row {
+    position: relative;
+}
+.content-wrapper .form-section .container .form-group .form-row .attach-icon {
+    position: absolute;
+    right: 0;
+    border-radius: 0 !important;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+        .content-wrapper .form-section {
+            max-width: 100%;
+        }
+
+        .content-wrapper .ads-section {
+            width: 100%;
+        }
+    }
+@media screen and (max-width: 700px) {
+        .content-wrapper {
+            height: auto;
+            flex-direction: column;
+        }
+        .content-wrapper .ads-section {
+            height: 50vh;
+            width: 100%;
+            display: flex;
+        }
+        .content-wrapper .form-section {
+            border-radius: 20px 20px 0 0;
+            margin-top: -2rem;
+            background-color: var(--white);
+            overflow: visible;
+            padding: 2rem 0;
+            z-index: 10;
+        }
+    }
